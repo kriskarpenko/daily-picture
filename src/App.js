@@ -1,11 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Calendar from "./components/Calendar";
+import DatePage from "./pages/DatePage";
 
 function App() {
   return (
     <div className="App">
-      Calendar will be here
-      <Calendar />
+      <Routes>
+        <Route path="/" element={<DatePage />} />
+        <Route path="/:date" element={<DatePage />} />
+      </Routes>
     </div>
   );
 }
