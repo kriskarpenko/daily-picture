@@ -10,6 +10,8 @@ import { useSearchParams } from "react-router-dom";
 export function useQueryParams() {
   const [searchParams] = useSearchParams();
   const result = {};
-  searchParams.forEach((value, key) => (result[key] = value));
+  searchParams.forEach((value, key) => {
+    result[key] = value;
+  });
   return result;
 }
