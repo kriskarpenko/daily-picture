@@ -1,14 +1,16 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import DatePage from "./pages/DatePage";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<DatePage />} />
-        <Route path="/:date" element={<DatePage />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DatePage />} />
+          <Route path="/:date" element={<DatePage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
