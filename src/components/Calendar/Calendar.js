@@ -1,6 +1,6 @@
 import styles from "./Calendar.module.css";
 
-const Calendar = ({ date = "2004-08-20", picture = "/default.png" }) => {
+const Calendar = ({ date = "2004-08-20", picture = "/defPic.png" }) => {
   return (
     <div>
       <img
