@@ -1,6 +1,7 @@
 import styles from "./Calendar.module.css";
 
-const Calendar = ({ date = "2004-08-20", picture = "/defPic.png" }) => {
+const Calendar = ({ date = "2004-08-20", picture = "/default.png" }) => {
+  /* eslint-disable jsx-a11y/img-redundant-alt */
   return (
     <div>
       <img
